@@ -15,12 +15,15 @@
 #include <DHT11/DHT11.h>
 ```
 
-4. define two variable for humidity and temprature and pass it to `readDHT11` function as pointer:
+4. define two variable for humidity and temprature and pass it to `readDHT11` function as pointer.
 ```
 unsigned char hum=0;
 char temp=0;
-unsigned char crc=readDHT11(&temp,&hum);
-printf("T=%dC  H=%dR CRC=%i\r\n",temp,hum,crc);
+unsigned char crc=0;
+
+//crc will be true if sensor data recieve correctly!
+crc=readDHT11(&temp,&hum);
+// here you can use data . if crc is true the values are valid.
 ```
 
 you can use the example which is available in repository.
