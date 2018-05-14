@@ -1,0 +1,35 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+DHT_STATUS                                                                        0x0160       1
+hum                                                                               0x0161       4
+temp                                                                              0x0165       4
+_seed                                                                             0x0169       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x00054     42
+DHT_setup                                                                         0x0007E      6
+DHT_readRaw                                                                       0x00084    174
+DHT_read                                                                          0x00132     58
+dataToTemp_G001                                                                   0x0016C      9
+putchar                                                                           0x00175      7
+put_usart_G100                                                                    0x0017C      8
+_ftoe_G100                                                                        0x00184    141
+_print_G100                                                                       0x00211    464
+printf                                                                            0x003E1     30
+strcpyf                                                                           0x003FF     12
+strlen                                                                            0x0040B     11
+strlenf                                                                           0x00416     12
+ftrunc                                                                            0x00422     48
+floor                                                                             0x00452     16
+ftoa                                                                              0x00462    135

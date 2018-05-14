@@ -1,0 +1,36 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+_seed                                                                             0x0160       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+bit_count                                                                         R5           1
+c                                                                                 R4           1
+cl                                                                                R7           1
+i                                                                                 R8,R9        2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+request                                                                           0x0005C      7
+response                                                                          0x00063     21
+recive                                                                            0x00078     38
+readDHT11                                                                         0x0009E     41
+main                                                                              0x000C7     35
+putchar                                                                           0x000EA      7
+put_usart_G100                                                                    0x000F1      8
+_ftoe_G100                                                                        0x000F9    145
+_print_G100                                                                       0x0018A    464
+printf                                                                            0x0035A     30
+strcpyf                                                                           0x00378     12
+strlen                                                                            0x00384     11
+strlenf                                                                           0x0038F     12
+ftrunc                                                                            0x0039B     48
+floor                                                                             0x003CB     16
+ftoa                                                                              0x003DB    136
