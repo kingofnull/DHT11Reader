@@ -33,9 +33,9 @@ while (1)
         
         unsigned char hum=0;
         char temp=0;
-		unsigned char crc=readDHT11(&temp,&hum);
-                   
-      
+	
+	unsigned char crc=readDHT11(&temp,&hum);
+	
         printf("T=%dC  H=%dR CRC=%i\r\n",temp,hum,crc);
         
         delay_ms(2000);
