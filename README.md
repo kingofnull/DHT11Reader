@@ -1,5 +1,5 @@
 # DH11 Reader
-#### A simple and clean library to read DHT11 humidity / temprature sensor implimented for `Code Vision AVR v3.12`
+#### A simple and clean library to read DHT11 humidity / temprature sensor ported for `Code Vision AVR v3.12`
 
 ### How to use:
 1. copy DHT11 diretory to your project root 
