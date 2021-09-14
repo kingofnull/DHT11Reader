@@ -1,30 +1,29 @@
 # DH11 Reader
-#### A simple and clean library to read DHT11 humidity / temprature sensor ported for `Code Vision AVR v3.12`
+#### A simple and easy library to read DHT11 humidity / temprature data ported for `Code Vision AVR v3.12` 
 
 ### How to use:
-1. copy DHT11 diretory to your project root 
+1. Copy DHT11 diretory to your project root 
 
-2. set sensor pin before include:
+2. Set sensor pin before including:
 ```
 // set dht11 sensor port and pin should be define before include
 #define SPIN C.0
 ```
 
-3. include library:
+3. Include the library:
 ```
 #include <DHT11/DHT11.h>
 ```
 
-4. define two variable for humidity and temprature and pass it to `readDHT11` function as pointer.
+4. Define two variable for humidity and temprature and pass it to `readDHT11` function as a reference.
 ```
 unsigned char hum=0;
 char temp=0;
 unsigned char crc=0;
 
-//crc will be true if sensor data recieve correctly!
+//crc will be true if sensor's data red correctly!
 crc=readDHT11(&temp,&hum);
-// here you can use data . if crc is true the values are valid.
 ```
 
-you can use the example which is available in repository.
+For more information take look at example.
 
